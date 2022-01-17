@@ -1,0 +1,19 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "Best Dance Website in the World",
+  "main": "app.js",
+  "scripts": {
+    "serve": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "node": "^17.3.0",
+    "nodemon": "^2.0.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,25 +1,17 @@
 extends base.pug
-title Deep's Dance Academy
-block scripts 
-    script(src="index.js")
-block style 
-    include ../static/style.css
-block content 
-   nav#navbar
-        ul
-            div#logo
-                img(src="/static/img/logo.png")
-                | DDA
-            li #[a(href="/") Home]
-            li #[a(href="/") About]
-            li #[a(href="/") Services]
-            li #[a(href="/") Class Info]
-            li #[a(href="/") Contact Us]
 
-  section#introSection
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+       include ../static/style.css  
+        
+block content    
+    section#introSection
         div Welcome to Deep's Dance Academy
         div.small Eat Sleep Dance Repeat
-  section#missionSection
+    section#missionSection
         h2 Our Mission
         div.fix
           div.card
@@ -45,11 +37,11 @@ block content
                       img(src="/static/img/dance3.png")
                   div.card-content
                       p This is the best dance academy of the universe
-  section#sponsorsSection
+    section#sponsorsSection
           h2 Our Sponsors
             div.spcard
               div.spsec
                 img(src= "/static/img/spons1.png",class= "spImage")
                 img(src= "/static/img/spons2.jpg",class= "spImage")
                 img(src= "/static/img/spons3.png",class= "spImage")
-                img(src= "/static/img/spons4.png",class= "spImage")
+                img(src= "/static/img/spons4.png",class= "spImage")       

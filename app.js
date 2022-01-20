@@ -12,7 +12,12 @@ app.set('view engine', 'pug');
 app.set('views',path.join(__dirname,'views'));
 
 app.get('/', (req,res)=>{
-    res.status(200).render('index');
+    res.status(200).render('home.pug');
+
+});
+
+app.get('/contact', (req,res)=>{
+    res.status(200).render('contact.pug');
 
 });
 

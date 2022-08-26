@@ -13,8 +13,21 @@ html
           li #[a(href="/") Home]
           li #[a(href="/") About]
           li #[a(href="/") Services]
-          li #[a(href="/") Class Info]
           li #[a(href="/contact") Contact Us]
+          div.info
+            div.log
+              | Log-In 
+            div.slash /
+            div.reg
+              |Register
     block content
+    script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12')
+    script.
+      var typed = new Typed('.auto',{
+       strings:["","Bhangra", "Hip-Hop","Salsa","Moon Walk","Classical Dance", "Folk Dance"],
+       typeSpeed:100,
+       backSpeed:100,
+       loop:true
+       });
     footer#footer
           | Copyright © 2021 DeepDanceAcademy.com | All rights reserved 

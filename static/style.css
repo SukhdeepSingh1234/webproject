@@ -4,7 +4,7 @@
 }
 #navbar{
     background-color: #e4dc00;
-    font-family: 'Yeon Sung' ;
+    font-family: 'Yeon Sung';
     padding: 13px, 14px;
 }
 .info{
@@ -12,25 +12,58 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 430px;
+}
+.round{
+    display: flex;
+    justify-content: center;
+    align-items: row;
+    color: #e4dc00;
+    /* border: 1px solid #e4dc00; */
+    /* background-color: #020412; */
+    /* border-radius: 28px; */
+}
+.log :hover{
+    cursor: pointer;
+}
+.reg :hover{
+    cursor: pointer;
+}
+.round a{
+    text-decoration: none;
+    color: #e4dc00;
 }
 .log{
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
-    border: 2px solid #020412;
     border-radius: 8px;
-    margin: 0px 5px;
+    margin: 3px 5px;
+    border: 1px solid #e4dc00;
+    background-color: #020412; 
+    border-radius: 28px;
+    padding: 0px 6px;
+}
+.log :hover{
+    color: white;
+    font-size: 22px;
 }
 .slash{
-    font-size:28px ;
+    font-size:26px ;
     font-weight: bold;
+    color:#020412
 }
 .reg{
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
-    border: 2px solid #020412;
     border-radius: 8px;
-    margin: 0px 5px;
+    margin: 3px 5px;
+    border: 1px solid #e4dc00;
+    background-color: #020412; 
+    border-radius: 28px;
+    padding: 0px 6px;
+}
+.reg :hover{
+    color: white;
+    font-size: 22px;
 }
 .line{
     display: flex;
@@ -68,6 +101,9 @@ span {
     list-style: none;
     font-weight: bold;
     font-size: 27px;
+}
+.sp{
+    width: 300px;
 }
 #navbar li a{ 
    text-decoration: none;
@@ -183,8 +219,44 @@ span {
     height: 50px;
     color: white;
     display: flex;
+    max-height: 19vh;
     justify-content: center;
     align-items: center;
     font-weight: bold;
 
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#table{
+    background-color: palegreen;
+    height: 315px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.tbl{
+    height: 171px;
+    width: 443px;
+}
+.btn1{
+    outline: none;
+    background-color: white;
+    color: #179301;
+    /* width: 80px; */
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    /* height: 30px; */
+    font-size: 18px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: #179301;
+    color: white;
+    font-size: 20px;
 }

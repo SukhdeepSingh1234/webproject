@@ -1,0 +1,41 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+       include ../static/style.css  
+       include ../static/member.css  
+        
+block content 
+     div.back
+       div.money
+         h1 Become Our Member Now
+         form.myForm(action='form.php')
+           label(for='name')
+           input.boxes(type='text', placeholder='Enter Your Name Here')
+           br
+           input.boxes(type='text', placeholder='Enter Your Email Id Here')
+           br
+           label.gend(for='genderidm')
+             input#genderidm(type='radio', value='genderm', name='gender')
+             | Male
+           label.gend(for='genderidf')
+             input#genderidf(type='radio', value='genderf', name='gender')
+             | Female
+           br
+           |  
+           input.red(type='checkbox', id='premium membership', name='premium')
+           label(for='premium membership') Want Premium Membership
+           br
+           select#plan.boxes(name='plan')
+             option(value="No Plan") Choose Your Plan 
+             option(value='Diet Plan') Belly Fat Loss Diet Plan
+             option(value='Personal Trainer') Workout(Personal Trainer)
+             option(value='VIP Memebership') Workout(VIP MEMBERSHIP)
+           br
+           textarea#query(name='query', cols='30', rows='10', placeholder="Drop Your Suggestion's")
+           br
+           label(for='buttona')
+             input#buttona(type='button', value='Submit')

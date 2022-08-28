@@ -1,0 +1,35 @@
+body{
+    background-color: hotpink;
+}
+/* .cont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+/* } */
+.img1{
+    width: 100vw;
+    height: 90vh;
+}
+.img2{
+    margin-top: 58px;
+    border: 3px solid gray;
+    border-radius: 12px;
+    margin-left: 45px;
+    width: 45vw;
+}
+.img3{
+    margin-top: 58px;
+    border: 3px solid gray;
+    border-radius: 12px;
+    margin-left: 650px;
+    width: 45vw;
+}
+.img4{
+    margin-top: 58px;
+    border: 3px solid gray;
+    border-radius: 12px;
+    margin-left: 45px;
+    width: 45vw;
+    margin-bottom: 30px;
+}

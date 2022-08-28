@@ -44,6 +44,16 @@ app.post('/contact', (req,res)=>{
     })
     // res.status(200).render('contact.pug');
 });
+app.get('/membership',(req,res)=>{
+    const params={ }
+    res.status(200).render('membership',params);
+
+});
+app.get('/infrastruct',(req,res)=>{
+    const params={ }
+    res.status(200).render('infrastruct',params);
+
+});
 
 app.listen(port , ()=>{
     console.log(`The Port started at ${port}`);

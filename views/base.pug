@@ -11,15 +11,17 @@ html
               img(src="/static/img/logo.png")
               | DDA
           li #[a(href="/") Home]
-          li #[a(href="/") About]
-          li #[a(href="/") Services]
+          li #[a(href="/membership") MemberShip]
+          li #[a(href="/infrastruct") Infrastructure]
           li #[a(href="/contact") Contact Us]
           div.info
-            div.log
-              | Log-In 
-            div.slash /
-            div.reg
-              |Register
+            span.sp
+            div.round 
+              div.log
+               a.r(href="") Log-In  
+              div.slash /
+              div.reg
+               a.r(href="") Register  
     block content
     script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12')
     script.

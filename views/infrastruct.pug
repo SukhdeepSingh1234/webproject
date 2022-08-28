@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+       include ../static/style.css  
+       include ../static/infra.css  
+        
+block content 
+    div.cont1
+       img.img1(src="./static/img/interior.jpg", alt="")
+       img.img2(src="./static/img/interior.png", alt="")
+       br
+       img.img3(src="./static/img/bhangra.jpeg", alt="")
+       br
+       img.img4(src="./static/img/salsa.jpg", alt="")

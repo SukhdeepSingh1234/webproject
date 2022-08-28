@@ -11,11 +11,12 @@ block style
 block content 
     div.infoCard
       H1 Contact Us
-      div.info
+      div.inform
         form(action= "/contact", method= "post", class= "myForm")
          input(type="text" ,class="myInput",name="name",placeholder="Enter your name")     
          input(type="phone" ,class="myInput",name="phone",placeholder="Enter your phone number")     
          input(type="email" ,class="myInput",name="email",placeholder="Enter your email id ")     
-         input(type="text" ,class="myInput",name="address",placeholder="Enter your address")     
-         input(type="text" ,class="myInput",name="desc",placeholder="Enter your concern")  
+         input(type="text" ,class="myInput",name="address",placeholder="Enter your address")   
+         textarea#area(cols='30', rows='10',placeholder='your concern')
+ 
          button.btn submit   
